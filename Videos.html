@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Re:Focus</title>
+ <link rel="stylesheet" type="text/css" href="styles.css"/>
+ <link rel="stylesheet" type="text/css" href="logout.css"/>
+ <script src="logout.js"></script>
+ <style>
+    body{
+
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+    }
+    .center{    
+        margin: auto;
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+        text-align-last: left;
+       
+}
+    .points{
+        background-image: url("bgpc.png");
+    }
+    .container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .box {
+        width: 400px;
+        margin: 10px;
+        text-align: center;
+        background-color: white;
+        border: 3px solid #497AA2;
+        border-radius: 15px;
+        
+    }
+    .box img {
+        width: 435px;
+        height: auto;
+       
+    }
+    .box h3 {
+        margin-top: 10px;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    .box p {
+        font-size: 14px;
+        color: #666;
+    }
+
+</style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="home.html" class="link-box">HOME</a></li>
+                <li><a href="Videos.html" class="link-box">VIDEOS</a></li>
+                <li><a href="Status.html" class="link-box">ARTICLES</a></li>
+                <li><a href="About.html" class="link-box">ABOUT</a></li>
+                <li><a href="Contact.html" class="link-box">CONTACT</a></li>
+            </ul>
+            <img src="user.png" class="user-pic" onclick="toggleMenu()">
+
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="user.png">
+                        <h2>Karl Edrin</h2>
+                    </div>
+                    <hr>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="profile.png">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="setting.png">
+                        <p>Settings & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="help.png">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+                    <a href="index.html" class="sub-menu-link">
+                        <img src="logout.png">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<header class="header-des1"><br></header>
+<header id="white"></header>
+
+ <main>
+    <p id="points">FC Points: 0</p>
+
+    <br><br>
+
+    <div class="container">
+      <div class="box">
+        <a href="https://www.youtube.com/watch?v=FWTNMzK9vG4" target="_blank">
+        <img id="myVideo1" src="thumbnail.png" alt="Video 1 thumbnail" width="420">
+        </a>
+        <h3>Why you procrastinate even when it feels bad</h3>
+      </div>
+
+        <div class="box">
+        <a href="https://www.youtube.com/watch?v=GvXBACCuKmg" target="_blank">
+        <img id="myVideo2" src="thumbnail.png" alt="Video 2 thumbnail" width="420">
+        </a>
+        <h3>What Procrastination Looks Like from the Inside</h3>
+        </div>
+        
+        <div class="box">
+        <a href="https://www.youtube.com/watch?v=48jlHaxZnig" target="_blank">
+        <img id="myVideo3" src="thumbnail.png" alt="Video 3 thumbnail" width="420">
+        </a>
+        <h3>How to Stop Procrastination & Increase Motivation</h3>
+        </div>
+
+        <div class="box">
+        <a href="https://www.youtube.com/watch?v=NIn7opOQWGQ" target="_blank">
+        <img id="myVideo4" src="thumbnail.png" alt="Video 4 thumbnail" width="420">
+        </a>
+        <h3>What Happens When You Procrastinate Too Much
+        </h3>
+      </div>
+    </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <script>
+      var pointsElement = document.getElementById("points");
+      var points = 0;
+      
+      
+      document.getElementById("myVideo1").addEventListener("click", function() {
+        points += 7;
+        pointsElement.textContent = "FC Points: " + points;
+      });
+      
+      
+      document.getElementById("myVideo2").addEventListener("click", function() {
+        points += 7;
+        pointsElement.textContent = "FC Points: " + points;
+      });
+      
+      
+      document.getElementById("myVideo3").addEventListener("click", function() {
+        points += 7;
+        pointsElement.textContent = "FC Points: " + points;
+      });
+      
+      
+      document.getElementById("myVideo4").addEventListener("click", function() {
+        points += 7;
+        pointsElement.textContent = "FC Points: " + points;
+      });
+      </script>
+      <script>
+        let subMenu = document.getElementById("subMenu");
+  
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+ </main>
+ <footer class="footer2">
+    <div class="container2" style="border: 0;">
+        <div class="footer-content">
+          <a href="#" class="become-member">Become a member</a>
+        </div>
+      </div>
+</footer>
+<footer class="footer">
+    <p>© Re:Focus</p>
+</footer>
+</body>
+</html>

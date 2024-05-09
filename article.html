@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #6F8C9F;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #6F8C9F;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+
+[class*="col-"] {
+  width: 100%;
+}
+
+body{
+            background-image: url("backrond.png.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+            
+        }
+        .center{
+            margin: auto;
+            width: 100%;
+            padding: 10px;
+            text-align: left;
+            text-align-last: left;
+           
+        }
+
+        .container{
+            display: flex;
+        }
+
+        .card{
+            border-radius: 20px;
+            margin-inline: 10px;
+            height: 300px;
+            background-color: #fff;
+            flex: 1;
+            transition: .3 all ease;
+            text-align: center;
+        }
+
+        .card:hover{
+            flex: 2;
+            background-color: rgb(207, 207, 207);
+
+        }
+
+</style>
+</head>
+<body>
+
+    
+<br><br><br><br><br><br><br><br><br>
+
+
+
+
+<div class="container">
+ <div class="card">
+  <h5>Why You Procrastinate (It Has Nothing to Do With Self-Control)</h5>
+    <a href="art1.html" target="_blank">
+        <img id="myVideo1" src="article.png" alt="art1" width="370">
+ </div>
+ <div class="card">
+  <h5>The Science Behind Procrastination</h5>
+    <a href="art2.html" target="_blank">
+    <img id="myVideo2" src="article.png" alt="art2" width="370"></a>
+</div>
+ <div class="card"> <h5>How To Stop Procastinating</h5>
+    <a href="art3.html" target="_blank">
+        <img id="myVideo3" src="article.png" alt="art3" width="370"></a>
+ </div>
+
+ <div class="card"> <h5>The Science Behind Procrastination</h5>
+  <a href="art4.html" target="_blank">
+      <img id="myVideo4" src="article.png" alt="art4" width="370"></a>
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="footer">
+  <p>© Re:Focus</p>
+</div>
+
+
+
+</body>
+</html>

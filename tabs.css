@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.tabs {
+    display: flex;
+    
+}
+.tab-button {
+    padding: 12px 50px;
+    margin: 10px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tab-button:focus {
+    outline: none;
+}
+.tab-button.active {
+    background-color: #ccc;
+}
+/* CSS for Tab Content */
+.tab-panel {
+    display: none;
+    padding: 20px;
+    align-items: center;
+}
+.tab-panel.active {
+    display: block;
+    align-items: center;
+}
+.tab-panel img {
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 10px solid #20547a;
+    padding: 2px;
+    width: auto;
+    align-items: center;
+}
+.container {
+    background-color: white;
+    padding: 2px;
+    border: 1px solid black;
+    align-items: center;
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Re:Focus</title>
+ <link rel="stylesheet" type="text/css" href="styles.css"/>
+ <link rel="stylesheet" type="text/css" href="logout.css"/>
+ <script src="logout.js"></script>
+ <style>
+  body{
+
+background-repeat: no-repeat;
+background-attachment: fixed;  
+background-size: cover;
+}
+.center{    
+margin: auto;
+width: 100%;
+padding: 10px;
+text-align: left;
+text-align-last: left;
+
+}
+.points{
+background-image: url("bgpc.png");
+}
+.container {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.box {
+width: 400px;
+margin: 10px;
+text-align: center;
+background-color: white;
+border: 3px solid #497AA2;
+border-radius: 15px;
+
+}
+.box img {
+width: 435px;
+height: auto;
+
+}
+.box h3 {
+margin-top: 10px;
+font-size: 18px;
+text-decoration: none;
+}
+.box p {
+font-size: 14px;
+color: #666;
+}
+h3 {
+margin-top: 10px;
+font-size: 18px;
+}
+
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #6F8C9F;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+
+
+[class*="col-"] {
+  width: 100%;
+}
+
+body{
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+            
+        }
+        .center{
+            margin: auto;
+            width: 100%;
+            padding: 10px;
+            text-align: left;
+            text-align-last: left;
+           
+        }
+
+        .container{
+            display: flex;
+        }
+
+        .card{
+            border-radius: 20px;
+            margin-inline: 10px;
+            height: 300px;
+            background-color: #fff;
+            flex: 1;
+            transition: .3 all ease;
+            text-align: center;
+        }
+
+        .card:hover{
+            flex: 2;
+            background-color: rgb(207, 207, 207);
+        }
+</style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="home.html" class="link-box">HOME</a></li>
+                <li><a href="Videos.html" class="link-box">VIDEOS</a></li>
+                <li><a href="Status.html" class="link-box">ARTICLES</a></li>
+                <li><a href="About.html" class="link-box">ABOUT</a></li>
+                <li><a href="Contact.html" class="link-box">CONTACT</a></li>
+            </ul>
+            <img src="user.png" class="user-pic" onclick="toggleMenu()">
+
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="user.png">
+                        <h2>Karl Edrin</h2>
+                    </div>
+                    <hr>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="profile.png">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="setting.png">
+                        <p>Settings & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="help.png">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+                    <a href="index.html" class="sub-menu-link">
+                        <img src="logout.png">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<header class="header-des1"><br></header>
+<header id="white"></header>
+
+ <main>
+    <div class="container">
+ <div class="card">
+  <h5>Why You Procrastinate (It Has Nothing to Do With Self-Control)</h5>
+    <a href="art1.html" target="_blank">
+        <img id="myVideo1" src="article.png" alt="Video 1 thumbnail" width="370">
+ </div>
+ <div class="card">
+  <h5>The Science Behind Procrastination</h5>
+    <a href="art2.html" target="_blank">
+    <img id="myVideo2" src="article.png" alt="Video 1 thumbnail" width="370"></a>
+</div>
+ <div class="card"> <h5>The Science Behind Procrastination</h5>
+    <a href="art3.html" target="_blank">
+        <img id="myVideo3" src="article.png" alt="Video 1 thumbnail" width="370"></a>
+ </div>
+
+ <div class="card"> <h5>The Science Behind Procrastination</h5>
+  <a href="art4.html" target="_blank">
+      <img id="myVideo4" src="article.png" alt="Video 1 thumbnail" width="370"></a>
+</div>
+</div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>  
+  <script>
+    let subMenu = document.getElementById("subMenu");
+
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+</script>
+ </main>
+ <footer class="footer  ">
+  <div class="container2" style="border: 0;">
+      <div class="footer-content">
+        <a href="#" class="become-member">Become a member</a>
+      </div>
+    </div>
+</footer>
+<footer class="footer">
+  <p>© Re:Focus</p>
+</footer>
+</body>
+</html>

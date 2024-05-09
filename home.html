@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re:Focus</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" type="text/css" href="logout.css"/>
+    <link rel="stylesheet" type="text/css" href="tabs.css"/> 
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li><a href="home.html" class="link-box">HOME</a></li>
+                    <li><a href="Videos.html" class="link-box">VIDEOS</a></li>
+                    <li><a href="Status.html" class="link-box">ARTICLES</a></li>
+                    <li><a href="About.html" class="link-box">ABOUT</a></li>
+                    <li><a href="Contact.html" class="link-box">CONTACT</a></li>
+                </ul>
+                <img src="user.png" class="user-pic" onclick="toggleMenu()">
+
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="user.png">
+                            <h2>Karl Edrin</h2>
+                        </div>
+                        <hr>
+
+                        <a href="#" class="sub-menu-link">
+                            <img src="profile.png">
+                            <p>Edit Profile</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="setting.png">
+                            <p>Settings & Privacy</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="help.png">
+                            <p>Help & Support</p>
+                            <span>></span>
+                        </a>
+                        <a href="index.html" class="sub-menu-link">
+                            <img src="logout.png">
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <header class="header-des1"><br></header>
+    <header id="white"></header>
+    
+    <main>
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-button" data-tab="tab1">Inside the Mind of a Master Procrastinator | Tim Urban | TED</button>
+                <button class="tab-button" data-tab="tab2">How to Get Your Brain to Focus | Chris Bailey | TEDxManchester</button>   
+                <button class="tab-button" data-tab="tab3">Self Worth Theory: The Key to Understanding & Overcoming Procrastination | Nic Voge | TEDxPrincetonUniversity</button>
+                <button class="tab-button" data-tab="tab4">A simple way to break a bad habit | Judson Brewer | TED</button>
+                <button class="tab-button" data-tab="tab5">Here's the real reason you procrastinate | Fuschia Sirois | TEDxNewcastle</button>
+            </div>
+            <div class="tab-content">
+                <div class="tab-panel" id="tab1">
+                    <img src="TEDTALK 1.jpg" alt="Image 1">
+                    <p>Tim Urban knows that procrastination doesn't make sense, but he's never been able to shake his habit of waiting until the last minute to get things done. In this hilarious and insightful talk, Urban takes us on a journey through YouTube binges, Wikipedia rabbit holes and bouts of staring out the window— and encourages us to think harder about what we're really procrastinating on, before we run out of time.</p>
+                    <br>
+                    <p>March 15, 2016</p>
+                    <p>https://ed.ted.com/lessons/inside-the-mind-of-a-master-procrastinator-tim-urban</p>
+                </div>
+                <div class="tab-panel" id="tab2">
+                    <img src="TEDTALK 2.jpg" alt="Image 2">
+                    <p>At TEDxManchester, Chris Bailey, author of the recent book Hyperfocus, talks about how our ability to focus is the key to productivity, creativity, and living a meaningful life.</p>
+                    <br>
+                    <p>April 5, 2019 </p>
+                    <p>https://singjupost.com/how-to-get-your-brain-to-focus-chris-bailey-full-transcript/</p>
+                </div>
+                <div class="tab-panel" id="tab3">
+                    <img src="TEDTALK 3.jpg" alt="Image 3">
+                    <p>This course aims to help learners understand and overcome procrastination by introducing the self-worth theory of motivation. The course teaches the surprising motivational dynamics underlying procrastination and provides a research-based framework for addressing it. The teaching method involves unraveling examples drawn from coaching students, and the intended audience includes individuals looking to overcome procrastination, avoidance, and over-commitment.</p>
+                    <br>
+                    <p>December 21, 2017</p>
+                    <p>https://www.classcentral.com/course/youtube-self-worth-theory-the-key-to-understanding-overcoming-procrastination-nic-voge-tedxprincetonu-174196</p>
+                </div>
+                <div class="tab-panel" id="tab4">
+                    <img src="TEDTALK 4.jpg" alt="Image 3">
+                    <p>Can we break bad habits by being more curious about them? Psychiatrist Judson Brewer studies the relationship between mindfulness and addiction — from smoking to overeating to all those other things we do even though we know they're bad for us. Learn more about the mechanism of habit development and discover a simple but profound tactic that might help you beat your next urge.</p>
+                    <br>
+                    <p>Feb 24, 2016</p>
+                    <p>https://ed.ted.com/lessons/K11azGiY</p>
+                </div>
+                <div class="tab-panel" id="tab5">
+                    <img src="TEDTALK 5.jpg" alt="Image 3">
+                    <p>Many believe that laziness, poor time management, or disorganisation are the reasons why people procrastinate. In this talk, Fuschia will explore the science behind why people procrastinate to reveal the “real” reasons why people unnecessarily delay, the toll it can take, and what you can do to reduce procrastination.</p>
+                    <br>
+                    <p>Jan 2, 2023</p>
+                    <p>https://www.ted.com/talks/fuschia_sirois_here_s_the_real_reason_you_procrastinate?language=en</p>
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+        <br><br><br><br>
+        <script>
+            const subMenu = document.getElementById("subMenu");
+            function toggleMenu() {
+                subMenu.classList.toggle("open-menu");
+            }
+        </script>
+        <script src="logout.js"></script>
+        <script src="tab.js"></script> 
+    </main>
+    <footer class="footer2">
+        <div class="container2" style="border: 0;">
+            <div class="footer-content">
+              <a href="#" class="become-member">Become a member</a>
+            </div>
+          </div>
+    </footer>
+    <footer class="footer">
+        <p>© Re:Focus</p>
+    </footer>
+</body>
+</html>
